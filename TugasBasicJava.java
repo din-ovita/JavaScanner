@@ -30,7 +30,6 @@ public class TugasBasicJava {
             int alas;
             int tinggi;
             int r;
-            int phi = 22 / 7;
             int ruang = 1;
             int konversi = 1;
             int derajat = 1;
@@ -89,14 +88,14 @@ public class TugasBasicJava {
                                                 System.out.println("Masukkan tinggi (satuan meter) :");
                                                 tinggi = sc.nextInt();
                                                 System.out
-                                                        .println("Luas Segitiga  = " + (1 / 2 * alas * tinggi) + "m2");
+                                                        .println("Luas Segitiga  = " + (1 * alas * tinggi / 2) + "m2");
                                                 break;
                                             // lingkaran
                                             case 4:
                                                 System.out.println("Lingkaran ");
                                                 System.out.println("Masukkan jari-jari (satuan meter) : ");
                                                 r = sc.nextInt();
-                                                System.out.println("Luas Lingkaran  = " + (phi * r * r) + "m2");
+                                                System.out.println("Luas Lingkaran  = " + (22 * r * r / 7) + "m2");
                                                 break;
                                             default:
                                                 System.out.println("Exit");
@@ -141,7 +140,8 @@ public class TugasBasicJava {
                                                 System.out.println("Masukkan jari-jari (satuan meter) : ");
                                                 r = sc.nextInt();
                                                 System.out
-                                                        .println("Volume Kubus = " + ((4 / 3 * phi * r * r * r) * 1000)
+                                                        .println("Volume Kubus = "
+                                                                + ((4 * 22 * r * r * r / 3 / 7) * 1000)
                                                                 + "liter");
                                                 break;
                                             default:
