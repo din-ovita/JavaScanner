@@ -140,7 +140,7 @@ public class TugasBasicJava {
                                                 System.out.println("Masukkan jari-jari (satuan meter) : ");
                                                 r = sc.nextInt();
                                                 System.out
-                                                        .println("Volume Kubus = "
+                                                        .println("Volume Bola = "
                                                                 + ((4 * 22 * r * r * r / 3 / 7) * 1000)
                                                                 + "liter");
                                                 break;
