@@ -71,7 +71,7 @@ public class TugasBasicJava {
                                                 System.out.println("Masukkan lebar (satuan meter) : ");
                                                 lebar = sc.nextFloat();
                                                 System.out.println(
-                                                        "Luas Persegi Panjang = " + ((panjang + lebar) * 2) + " m²");
+                                                        "Luas Persegi Panjang = " + (panjang * lebar) + " m²");
                                                 break;
                                             // persegi
                                             case 2:
