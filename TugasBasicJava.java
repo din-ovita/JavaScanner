@@ -252,7 +252,7 @@ public class TugasBasicJava {
                                         }
                                     } while (derajat < 4);
                                     break;
-                                // panjang
+                                // menu panjang
                                 case 2:
                                     System.out.println("Panjang");
                                     do {
@@ -309,7 +309,7 @@ public class TugasBasicJava {
                                     } while (sPanjang < 7);
                                     break;
 
-                                // berat
+                                // menu berat
                                 case 3:
                                     System.out.println("Berat");
                                     do {
