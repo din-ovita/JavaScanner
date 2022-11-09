@@ -415,12 +415,12 @@ public class TugasBasicJava {
                                         break;
                                 }
                             } while (secret < 4);
+                            break;
                         } else {
                             System.out.println("Akses Ditolak!");
                         }
                 }
             } while (menuAwal < 4);
-
         } else {
             System.out.println("Akses Ditolak!");
             sc.close();
