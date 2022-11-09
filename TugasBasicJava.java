@@ -166,7 +166,7 @@ public class TugasBasicJava {
                             System.out.println("Silahkan Pilih : \n 1. Derajat \n 2. Panjang \n 3. Berat \n 4. Exit");
                             konversi = sc.nextInt();
                             switch (konversi) {
-                                // derajat
+                                // menu derajat
                                 case 1:
                                     System.out.println("Derajat");
                                     do {
