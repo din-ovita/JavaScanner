@@ -19,17 +19,17 @@ public class TugasBasicJava {
         System.out.println("Masukkan PIN : ");
         pin = sc.nextInt();
         // if else
-        if (nama.equals("Administator") && password.length() >= 5 && pin == 123456789) {
-            System.out.println("Akses Diterima, Selamat Datang!");
+        if (nama.equals("Administrator") && password.length() >= 5 && pin == 123456789) {
+            System.out.println("Akses Diterima, Selamat Datang!!!");
             // variable
             int menuAwal = 1;
             int bangun = 1;
             int datar = 1;
-            int panjang;
-            int lebar;
-            int alas;
-            int tinggi;
-            int r;
+            float panjang;
+            float lebar;
+            float alas;
+            float tinggi;
+            float r;
             int ruang = 1;
             int konversi = 1;
             int derajat = 1;
@@ -67,35 +67,35 @@ public class TugasBasicJava {
                                             case 1:
                                                 System.out.println("Persegi Panjang ");
                                                 System.out.println("Masukkan panjang (satuan meter) : ");
-                                                panjang = sc.nextInt();
+                                                panjang = sc.nextFloat();
                                                 System.out.println("Masukkan lebar (satuan meter) : ");
-                                                lebar = sc.nextInt();
+                                                lebar = sc.nextFloat();
                                                 System.out.println(
-                                                        "Luas Persegi Panjang = " + (2 * (panjang + lebar)) + "m2");
+                                                        "Luas Persegi Panjang = " + ((panjang + lebar) * 2) + " m²");
                                                 break;
                                             // persegi
                                             case 2:
                                                 System.out.println("Persegi ");
                                                 System.out.println("Masukkan panjang sisi (satuan meter) : ");
-                                                panjang = sc.nextInt();
-                                                System.out.println("Luas Persegi  = " + (panjang * panjang) + "m2");
+                                                panjang = sc.nextFloat();
+                                                System.out.println("Luas Persegi  = " + (panjang * panjang) + " m²");
                                                 break;
                                             // segitiga
                                             case 3:
                                                 System.out.println("Segitiga ");
                                                 System.out.println("Masukkan panjang alas (satuan meter) : ");
-                                                alas = sc.nextInt();
+                                                alas = sc.nextFloat();
                                                 System.out.println("Masukkan tinggi (satuan meter) :");
-                                                tinggi = sc.nextInt();
+                                                tinggi = sc.nextFloat();
                                                 System.out
-                                                        .println("Luas Segitiga  = " + (1 * alas * tinggi / 2) + "m2");
+                                                        .println("Luas Segitiga  = " + (alas * tinggi / 2) + " m²");
                                                 break;
                                             // lingkaran
                                             case 4:
                                                 System.out.println("Lingkaran ");
                                                 System.out.println("Masukkan jari-jari (satuan meter) : ");
-                                                r = sc.nextInt();
-                                                System.out.println("Luas Lingkaran  = " + (22 * r * r / 7) + "m2");
+                                                r = sc.nextFloat();
+                                                System.out.println("Luas Lingkaran  = " + (22 * r * r / 7) + " m²");
                                                 break;
                                             default:
                                                 System.out.println("Exit");
@@ -115,34 +115,34 @@ public class TugasBasicJava {
                                             // balok
                                             case 1:
                                                 System.out.println("Balok");
-                                                System.out.println("Masukkan panjang (satuan meter) : ");
-                                                panjang = sc.nextInt();
-                                                System.out.println("Masukkan lebar (satuan meter) : ");
-                                                lebar = sc.nextInt();
-                                                System.out.println("Masukkan tinggi (satuan meter) : ");
-                                                tinggi = sc.nextInt();
+                                                System.out.println("Masukkan panjang (satuan liter) : ");
+                                                panjang = sc.nextFloat();
+                                                System.out.println("Masukkan lebar (satuan liter) : ");
+                                                lebar = sc.nextFloat();
+                                                System.out.println("Masukkan tinggi (satuan liter) : ");
+                                                tinggi = sc.nextFloat();
                                                 System.out
-                                                        .println("Volume Balok = " + ((panjang * lebar * tinggi) * 1000)
-                                                                + "liter");
+                                                        .println("Volume Balok = " + (panjang * lebar * tinggi)
+                                                                + " liter");
                                                 break;
                                             // kubus
                                             case 2:
                                                 System.out.println("Kubus");
-                                                System.out.println("Masukkan panjang sisi (satuan meter) : ");
-                                                panjang = sc.nextInt();
+                                                System.out.println("Masukkan panjang sisi (satuan liter) : ");
+                                                panjang = sc.nextFloat();
                                                 System.out.println(
-                                                        "Volume Kubus = " + ((panjang * panjang * panjang) * 1000)
-                                                                + "liter");
+                                                        "Volume Kubus = " + (panjang * panjang * panjang)
+                                                                + " liter");
                                                 break;
                                             // bola
                                             case 3:
                                                 System.out.println("Bola");
-                                                System.out.println("Masukkan jari-jari (satuan meter) : ");
-                                                r = sc.nextInt();
+                                                System.out.println("Masukkan jari-jari (satuan liter) : ");
+                                                r = sc.nextFloat();
                                                 System.out
                                                         .println("Volume Bola = "
-                                                                + ((4 * 22 * r * r * r / 3 / 7) * 1000)
-                                                                + "liter");
+                                                                + (4 * 22 * r * r * r / 3 / 7)
+                                                                + " liter");
                                                 break;
                                             default:
                                                 System.out.println("Exit");
@@ -239,7 +239,7 @@ public class TugasBasicJava {
                                                             break;
                                                         case 2:
                                                             System.out.println("Derajat Reamur = "
-                                                                    + (4 * (celcius - 32) / 9) + "°F");
+                                                                    + (4 * (celcius - 32) / 9) + "°R");
                                                             break;
                                                         default:
                                                             System.out.println("Exit");
@@ -293,14 +293,14 @@ public class TugasBasicJava {
                                                 System.out.println("Masukkan nilai (meter) : ");
                                                 meter = sc.nextFloat();
                                                 System.out.println("Konversi dari " + meter + " meter" + " = "
-                                                        + (meter / 100) + " cm");
+                                                        + (meter * 100) + " cm");
                                                 break;
                                             case 6:
                                                 System.out.println("Milimeter");
                                                 System.out.println("Masukkan nilai (meter) : ");
                                                 meter = sc.nextFloat();
                                                 System.out.println("Konversi dari " + meter + " meter" + " = "
-                                                        + (meter / 1000) + " mm");
+                                                        + (meter * 1000) + " mm");
                                                 break;
                                             default:
                                                 System.out.println("Exit");
@@ -314,7 +314,7 @@ public class TugasBasicJava {
                                     System.out.println("Berat");
                                     do {
                                         System.out.println(
-                                                "Si;ahkan Pilih : \n 1. Kilogram \n 2. Hektogram \n 3. Dekagram \n 4. Desigram \n 5. Sentigram \n 6. Miligram \n 7. Exit");
+                                                "Silahkan Pilih : \n 1. Kilogram \n 2. Hektogram \n 3. Dekagram \n 4. Desigram \n 5. Sentigram \n 6. Miligram \n 7. Exit");
                                         sBerat = sc.nextInt();
                                         switch (sBerat) {
                                             case 1:
@@ -391,6 +391,7 @@ public class TugasBasicJava {
                                         sc.nextLine();
                                         System.out.println("Masukkan Data : ");
                                         dataInput = sc.nextLine();
+                                        System.out.println("Hasil : ");
                                         System.out.println(dataInput.toUpperCase());
                                         break;
                                     case 2:
@@ -398,6 +399,7 @@ public class TugasBasicJava {
                                         sc.nextLine();
                                         System.out.println("Masukkan Data : ");
                                         dataInput = sc.nextLine();
+                                        System.out.println("Hasil : ");
                                         System.out.println(dataInput.toLowerCase());
                                         break;
                                     case 3:
@@ -405,16 +407,14 @@ public class TugasBasicJava {
                                         sc.nextLine();
                                         System.out.println("Masukkan Data : ");
                                         dataInput = sc.nextLine();
+                                        System.out.println("Hasil : ");
                                         List<String> unik = Arrays.asList(dataInput.split(" "));
                                         Collections.reverse(unik);
                                         System.out.println(
                                                 String.join(" ", unik));
                                         break;
-                                    default:
-                                        break;
                                 }
                             } while (secret < 4);
-                            break;
                         } else {
                             System.out.println("Akses Ditolak!");
                         }
